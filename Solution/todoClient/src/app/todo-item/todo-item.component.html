@@ -1,0 +1,5 @@
+<li *ngIf="todo">
+  <input type="checkbox" [(ngModel)]="todo.completed">
+  <span [ngClass]="{ completed: todo.completed }">{{ todo.title }}</span>
+</li>
+

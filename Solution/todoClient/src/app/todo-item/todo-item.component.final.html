@@ -1,0 +1,4 @@
+<li *ngIf="todo">
+  <span *ngIf="todo.completed">Task is completed : </span>
+  <span [ngClass]="{ completed: todo.completed }">{{ todo.title }}</span>
+</li>
